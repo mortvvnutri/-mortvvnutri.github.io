@@ -1,0 +1,192 @@
+@keyframes anim{
+	from{margin-left:3px;}
+	to{margin-left:500px;}
+}
+#d1{
+	animation:anim 4s 1  forwards;
+}
+#d1, #d2, #d3, #d4, #d5{
+width: 50px;
+height: 50px;
+border: 1px solid red;
+}
+#d2{
+	animation:anim 4s infinite;
+}
+@keyframes d3{
+	from{
+		margin-left: 0px;
+	}
+	to{
+		margin-left: 400px;
+	}
+}
+@keyframes b3{
+	from{
+		background-color:red;
+	}
+	to{
+		background-color:white;
+	}
+}
+#d3{
+animation:d3 4s infinite,b3 4s infinite;
+}
+.body{ 
+	width: 300px;
+	height: 150px;
+	overflow: hidden;
+}
+.body1{ 
+	width: 300px;
+	height: 150px;
+}
+@keyframes d4d5{
+	0%{margin-left: 0%; margin-top: 0%;}
+	25%{margin-left: 50%; margin-top: 0%;}
+	50%{margin-left: 50%; margin-top: 20%;}
+	75%{margin-left: 0%; margin-top: 20%;}
+	100%{margin-left: 0%; margin-top: 0%;}
+}
+#d4{
+	-webkit-animation: d4d5 8s linear 30;
+	animation: d4d5 8s linear 30;
+}
+#d5{
+	-webkit-animation: d4d5 8s linear 30, bg 8s 3;
+	animation: d4d5 8s linear 30, bg 8s 3;
+}
+@keyframes mova{
+	0%{margin-left: 0%; margin-top: 0%;}
+	50%{margin-left: 50%; margin-top: -10%;}
+	100%{margin-left: 100%; margin-top: 0%;}
+}
+#d6{
+	animation-direction: alternate;
+	animation-duration:3s;
+	animation-name: mova;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+	border: 1px solid black;
+	width: 50px;
+	height: 50px;
+
+}
+@keyframes test{
+	0%{width: 0%;}
+	100%{width: 100%;}
+}
+@keyframes test1{
+	0%{width: 0%;}
+	100%{width: 50%;}
+}
+
+#d71{
+	margin: 0 auto;
+	width: 50%;
+	height: 30px;
+	border: 1px solid red;
+}
+#test1{
+	background: red;
+	width: 1% ;
+	height: 30px;
+	-webkit-animation:test1 5s linear 1 forwards;
+	animation:test1 5s linear 1 forwards;
+}
+#d7{
+	margin: 0 auto;
+	width: 50%;
+	height: 30px;
+	border: 1px solid red;
+}
+
+#test{
+	background: red;
+	width: 0%;
+	height: 30px;
+	-webkit-animation:test 5s linear 1 forwards;
+	animation:test 5s linear 1 forwards;
+}
+@keyframes movi{
+	from {margin-left:3px;}
+	to{margin-left:500px;}
+}
+
+#d8{
+	animation-play-state: paused;
+	animation-duration:9s;
+	animation-name: movi;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+	border: 1px solid black;
+	height: 60px;
+	width: 90px;
+	font-size:16px;
+}
+#d8:hover{
+	animation-play-state: running;
+}
+#d81{
+	animation-play-state: paused;
+	animation-duration:3s;
+	animation-name: movi;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+	border: 1px solid blue;
+	width: 400px;
+	height: 80px;
+}
+#hover-me{
+	border:1px solid red;
+	width:200px;
+	height:40px;
+}
+#hover-me:hover~#d81{animation-play-state:running;border: 1px solid red;}
+body{
+	margin: 0px;
+}
+@keyframes bouncing{
+	40%, 70%, 90%{
+		animation-timing-function: ease-out;
+		bottom: 0;
+	}
+	0%{
+		bottom: 200px;
+		left: 0;
+		animation-timing-function: ease-in;
+	}
+	55%{
+		bottom: 50px;
+		animation-timing-function: ease-in;
+	}
+	80%{
+		bottom: 25px;
+		animation-timing-function: ease-in;
+	}
+	95%{
+		bottom: 10px;
+		animation-timing-function: ease-in;
+	}
+	100%{
+		left: 110px;
+		bottom: 0;
+		animation-timing-function: ease-out;
+	}
+}
+
+#d9{
+	margin: 0px auto;
+	width: 220px;
+	height: 220px;
+	border: 1px solid red;
+	position: relative;
+}
+#ball{
+	background: red;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	position: absolute;
+	animation: bouncing 5s infinite;
+}
