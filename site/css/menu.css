@@ -1,0 +1,24 @@
+@font-face{
+	font-family:mil;
+	src:url(fonts/mil.ttf);
+}
+.menu{
+    background-color: black;
+    overflow: hidden;
+
+}
+.menu a{
+	float:left;
+	font-size: 22px;
+}
+	
+.menu a:link, .menu a:visited{
+    text-decoration: none;
+    background: black;
+    color: #f0f0f0;;
+    padding: 10px;
+}
+.menu a:hover, menu a:active{
+    background: #f0f0f0;
+    color:black;
+}
