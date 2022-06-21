@@ -24,7 +24,7 @@ h1{
 	text-align: center;
 }
 h2{
-	font-size: 26px;
+	font-size: 30px;
 	text-align: center;
 }
 p{
@@ -34,6 +34,29 @@ p{
 	width:60%;
 	height: 30%;
 }
+.fix iframe{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
 .b-table_of_contents_text a{
 	text-decoration: none;
+}
+.pointer {
+    background-color: orange;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+    bottom: 15px;
+    right: 15px;
+}
+.pointer img{
+	height: 30px;
+	width: 50px;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.hed img{
+	width: 100%;
 }
