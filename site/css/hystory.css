@@ -1,0 +1,64 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	background: url(../images/fon2.jpg), url(../images/fon2.jpg);
+	background-repeat: no-repeat,no-repeat;
+	background-position: left,right;
+	background-attachment: fixed,fixed;
+	background-size: 15% 100%, 15% 100%;
+	background-color: #f0f0f0;
+}
+.page{
+	margin-right: 15%;
+	margin-left: 15%;
+	background-color: #f0f0f0;
+	font-family: mil;
+}
+.page-t{
+	margin: 2%;
+	font-size: 20px;
+}
+h1{
+	font-size: 36px;
+	text-align: center;
+}
+h2{
+	font-size: 30px;
+	text-align: center;
+}
+p{
+	text-indent: 1.5em;
+}
+.fix img{
+	width:60%;
+	height: 30%;
+}
+.b-table_of_contents_text a{
+	text-decoration: none;
+}
+.hed img{
+	width: 100%;
+}
+.int{
+	padding: 5px;
+	border: 2px solid darkgrey;
+}
+.pointer {
+    background-color: orange;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+    bottom: 15px;
+    right: 15px;
+}
+.pointer img{
+	height: 30px;
+	width: 50px;
+	margin-top: 15px;
+	margin-left: 10px;
+}
